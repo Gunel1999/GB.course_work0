@@ -36,3 +36,17 @@ string[] NewArray(string[] inputArray)
     return resultArray;
 }
 
+// Вывод массива на экран
+void PrintArray(string[] inputArray)
+{
+    Console.Write("[");
+    for (int i = 0; i < inputArray.Length; i++)
+    {
+        Console.Write(inputArray[i]);
+        if (i < inputArray.Length - 1) Console.Write(", ");
+    }
+    Console.WriteLine("]");
+}
+
+// Вывод результата
+PrintArray(NewArray(array));
